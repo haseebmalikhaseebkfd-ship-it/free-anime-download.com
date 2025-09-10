@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Anime Series Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .series-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .series-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-wide">Free Anime Series Hub</h1>
+            <p class="text-xl text-gray-200 mb-6">Discover and stream your favorite anime series for free. No ads, just pure entertainment.</p>
+            <input type="text" id="searchInput" placeholder="Search anime series..." class="w-full md:w-1/2 mx-auto px-4 py-3 rounded-full border-2 border-gray-300 focus:border-blue-500 focus:outline-none text-gray-800 shadow-lg">
+        </header>
+
+        <main id="seriesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Sample Anime Series (You can replace or add more via JS or manually) -->
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c6373c54-3743-46e3-8407-6bb50f2013c3.png" alt="Vibrant anime poster featuring Naruto, the young ninja with orange hair and blue eyes, standing confidently in a fictional ninja village with swirling clouds and energy auras in the background, illustrated in a dynamic manga style" class="w-full h-96 object-cover" onerror="this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/43427ef6-c733-45a1-bc3c-07039872281a.png'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Naruto: Shippuden</h2>
+                    <p class="text-gray-600 mb-4">Follow the journey of Naruto Uzumaki as he becomes a full-fledged ninja in the Hidden Leaf Village.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/32e10459-5315-469d-bbca-9a089aa5806c.png" alt="Action-packed anime poster of Goku in Dragon Ball, a muscular Saiyan warrior with spiky black hair and intense expression, battling in a mystical arena with floating rocks and explosive energy blasts, in a high-energy shonen style" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Dragon Ball Z</h2>
+                    <p class="text-gray-600 mb-4">Epic battles and adventures with Goku and his friends as they protect Earth from powerful enemies.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ef910e84-d263-452e-ae3a-1853a871c1d6.png" alt="Mystical anime poster for My Hero Academia, showing Izuku Midoriya with green hair and All Might in a heroic pose, against a cityscape with glowing superpowers and debris, illustrated in a bold superhero manga style" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">My Hero Academia</h2>
+                    <p class="text-gray-600 mb-4">In a world where superpowers are common, a boy without quirks dreams of becoming the greatest hero.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03ee924b-3e98-46b6-9df6-8c77e31280cc.png" alt="Emotional anime poster for Attack on Titan, depicting Eren Jaeger in a military uniform staring intensely toward giant titans emerging from mist in a fortified wall, with dramatic lighting and dark fantasy elements" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Attack on Titan</h2>
+                    <p class="text-gray-600 mb-4">Humanity fights back against colossal Titans who devour everything in their path.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ce2a873-0d20-4ff0-849e-6a0b9af03a1a.png" alt="Whimsical anime poster for Spirited Away, featuring Chihiro with black hair exploring a magical bathhouse with soot spirits and mythical creatures floating in a surreal, colorful world inspired by Studio Ghibli" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Spirited Away</h2>
+                    <p class="text-gray-600 mb-4">A young girl enters a magical world and works at a bathhouse for supernatural creatures to save her parents.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+            <div class="series-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8e81f98-4601-402f-9b36-d8867fb71f6f.png" alt="Adventurous anime poster for One Piece, showing Monkey D. Luffy with a straw hat grinning brightly at sea with his pirate crew aboard a massive ship under a vast ocean sky, in a vibrant shonen adventure style" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">One Piece</h2>
+                    <p class="text-gray-600 mb-4">Follow Luffy and his crew on a grand treasure hunt across oceans full of mysteries and battles.</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center text-gray-300 mt-12">
+            <p>Built with love for anime lovers. All series are placeholders - replace with actual free content.</p>
+        </footer>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const seriesGrid = document.getElementById('seriesGrid');
+        const cards = Array.from(seriesGrid.children);
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            cards.forEach(card => {
+                const title = card.querySelector('h2').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Add load more functionality for scalability
+        let loaded = 6;
+        const series = [
+            "Death Note", "Fullmetal Alchemist", "Bleach", "Sword Art Online", "Tokyo Ghoul", "Fairy Tail"
+        ];
+
+        function addCard(title, description, imgAltSuffix) {
+            const card = document.createElement('div');
+            card.className = 'series-card bg-white rounded-lg overflow-hidden shadow-md';
+            card.innerHTML = `
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3bba413f-a2b9-437a-a304-282dbc966423.png" alt="${imgAltSuffix}" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/300x400/E0E0E0/000000?text=Image+Loading'"/>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">${title}</h2>
+                    <p class="text-gray-600 mb-4">${description}</p>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Watch Now</a>
+                </div>
+            `;
+            seriesGrid.appendChild(card);
+            cards.push(card);
+        }
+
+        // Example: Add more series on scroll (for demo)
+        window.addEventListener('scroll', function() {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && loaded < series.length) {
+                for (let i = 0; i < 3 && loaded < series.length; i++) {
+                    const title = series[loaded];
+                    addCard(title, `Explore the epic world of ${title}, filled with action, drama, and unforgettable characters.`, `Dramatic anime poster for ${title}, depicting protagonist in action pose with intense expressions and dynamic backgrounds in manga style`);
+                    loaded++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
